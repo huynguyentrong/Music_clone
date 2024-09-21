@@ -92,15 +92,7 @@ function playPause() {
     clearInterval(timer);
   }
 }
-playRepeat.addEventListener("click", () => {
-  if (isRepeat) {
-    isRepeat = false;
-    playRepeat.removeAttribute("style");
-  } else {
-    isRepeat = true;
-    playRepeat.style.color = "#ffb86c";
-  }
-});
+
 song.addEventListener("ended", (e) => {
   e.preventDefault();
   repeatCount++;
@@ -146,6 +138,15 @@ prevBtn.addEventListener("click", () => {
     changeSong(-1);
   } else {
     changeSong(-1);
+  }
+});
+playRepeat.addEventListener("click", () => {
+  if (isRepeat) {
+    isRepeat = false;
+    playRepeat.removeAttribute("style");
+  } else {
+    isRepeat = true;
+    playRepeat.style.color = "#ffb86c";
   }
 });
 // Ramdom Song
