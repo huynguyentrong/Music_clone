@@ -1,0 +1,81 @@
+.header {
+  padding: 20px 36px;
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    button {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background-color: $background-light;
+      border: 1px solid #464748;
+      font-size: 20px;
+      padding: 4px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    a {
+      color: $color-light;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    a:hover {
+      color: $text-color;
+    }
+  }
+  &-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 70%;
+    background-color: #1d1d1d;
+    border: 1px solid #464748;
+    padding: 10px;
+    border-radius: 8px;
+    i {
+      color: $color-light;
+    }
+    input {
+      width: 100%;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: $color;
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .header-search {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-search {
+    width: 40%;
+  }
+  .header-link button {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header-link a {
+    font-size: 13px;
+  }
+  .header-search {
+    width: 38%;
+  }
+  .header-link button {
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header-search {
+    width: 40%;
+  }
+}

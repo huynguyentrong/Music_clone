@@ -1,0 +1,22 @@
+body {
+  font-family: $font;
+  color: $color;
+  background: linear-gradient(#050505, #18181d);
+  height: 100vh;
+  cursor: pointer;
+}
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    grid-template-columns: 3fr 2fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="sidebar-logo">
+          <button class="menu-btn" id="menu-close">
+            <i class="fa-solid fa-right-from-bracket"></i>
+          </button>
+          <img src="./image/logo.png" alt="" />
+          <a href="">Spotify</a>
+        </div>
+        <div class="sidebar-menu">
+          <h5>menu</h5>
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <i class="fa-solid fa-bolt"></i><a href="#">Explore</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-volume-high"></i><a href="#">Genres</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-image"></i><a href="#">Albums</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-microphone"></i><a href="#">Artists</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-radio"></i><a href="#">Podcast</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-menu">
+          <h5>Libary</h5>
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <i class="fa-solid fa-rotate-left"></i><a href="#">Recent</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-image"></i><a href="#">Albums</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-heart"></i><a href="#">favorite</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-folder"></i><a href="#">Local</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sidebar-menu">
+          <h5>Playlist</h5>
+          <ul class="sidebar-list">
+            <li class="sidebar-item">
+              <i class="fa-solid fa-plus"></i>
+              <a href="#">Create New</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-play"></i>
+              <a href="#">Best of 2023</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-play"></i>
+              <a href="#">Best of 2022</a>
+            </li>
+            <li class="sidebar-item">
+              <i class="fa-solid fa-play"></i>
+              <a href="#">Kael Fischer</a>
+            </li>
+          </ul>
+        </div>
+        <div class="playing">
+          <div class="playing-top">
+            <img src="./image/current.jpg" alt="" />
+            <h4>Apple<br />Homepod</h4>
+          </div>
+          <div class="playing-bottom">
+            <i class="fa-solid fa-podcast"></i>
+            <p>Playing On Device</p>
+          </div>
+        </div>
+      </div>
+      <main>
+        <header class="header">
+          <div class="header-container">
+            <div class="header-link">
+              <button class="menu-btn" id="menu-open">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+              <a href="" className="header-link-item">Music</a>
+              <a href="" className="header-link-item">Live</a>
+              <a href="" className="header-link-item">Podcast</a>
+            </div>
+            <div class="header-search">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Type here to search"
+              class="song-search" / >
+            </div>
+          </div>
+        </header>
+        <div class="trending">
+          <div class="trending-left">
+            <h5>Trending New Song</h5>
+            <div class="trending-info">
+              <h2>Lost Emotions</h2>
+              <h4>Rion clarke</h4>
+              <h5>63 Million Plays</h5>
+              <div class="trending-button">
+                <button>Listen Now</button>
+                <i class="fa-solid fa-heart"></i>
+              </div>
+            </div>
+          </div>
+          <img src="/image/trend.png" alt="" />
+        </div>
+        <div class="playlist">
+          <div class="playlist-genres">
+            <div class="playlist-header">
+              <h5>Genres</h5>
+              <a href="">See all</a>
+            </div>
+            <div class="playlist-items">
+              <div class="playlist-item">
+                <p>Electro<br />Pop</p>
+              </div>
+              <div class="playlist-item">
+                <p>Dancer<br />Beat</p>
+              </div>
+              <div class="playlist-item">
+                <p>Clubhouse<br />Remix</p>
+              </div>
+              <div class="playlist-item">
+                <p>Hip Hop<br />Rap</p>
+              </div>
+              <div class="playlist-item">
+                <p>Alternative<br />India</p>
+              </div>
+              <div class="playlist-item">
+                <p>Classical<br />Period</p>
+              </div>
+            </div>
+          </div>
+          <div class="music-list">
+            <div class="music-list-header">
+              <h5>Top Songs</h5>
+              <a href="">See all</a>
+            </div>
+            <div class="music-list-playlist"></div>
+            <!-- <div class="music-list-items">
+              <div class="music-list-item">
+                <div class="music-list-item-info">
+                  <p>01</p>
+                  <img src="/image/bruno.jpg" alt="" />
+                  <div class="music-list-item-details">
+                    <h5>sunrise</h5>
+                    <p>Lila Rivera</p>
+                  </div>
+                </div>
+                <div class="music-list-item-action">
+                  <p>03:45</p>
+                  <div class="icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="music-list-item">
+                <div class="music-list-item-info">
+                  <p>02</p>
+                  <img src="/image/bruno.jpg" alt="" />
+                  <div class="music-list-item-details">
+                    <h5>Voyage</h5>
+                    <p>Lila Rivera</p>
+                  </div>
+                </div>
+                <div class="music-list-item-action">
+                  <p>03:45</p>
+                  <div class="icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="music-list-item">
+                <div class="music-list-item-info">
+                  <p>03</p>
+                  <img src="/image/bruno.jpg" alt="" />
+                  <div class="music-list-item-details">
+                    <h5>sunrise</h5>
+                    <p>Lila Rivera</p>
+                  </div>
+                </div>
+                <div class="music-list-item-action">
+                  <p>03:45</p>
+                  <div class="icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="music-list-item">
+                <div class="music-list-item-info">
+                  <p>04</p>
+                  <img src="/image/bruno.jpg" alt="" />
+                  <div class="music-list-item-details">
+                    <h5>sunrise</h5>
+                    <p>Lila Rivera</p>
+                  </div>
+                </div>
+                <div class="music-list-item-action">
+                  <p>03:45</p>
+                  <div class="icon">
+                    <i class="fa-solid fa-play"></i>
+                  </div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </main>
+      <section class="right">
+        <div class="right-profile">
+          <!-- <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-gear"></i> -->
+          <a href="signUp.html" class="right-signup">Sign Up</a>
+          <div class="right-user">
+            <!-- <div class="right-user-left">
+              <img src="/image/bruno.jpg" />
+            </div>
+            <div class="right-user-right">
+              <h5>Jhon Doe</h5>
+            </div> -->
+            <a href="Login.html" class="right-signin">Sign In</a>
+          </div>
+        </div>
+        <div class="customer">
+          <div class="customer-top">
+            <div class="customer-header">
+              <h5>player</h5>
+              <i class="fa-solid fa-list-check"></i>
+            </div>
+            <div class="song-info">
+              <img src="./image/current.jpg" alt="" class="music-thumb" />
+              <div class="song-info-desc">
+                <h3 class="music-name">Ripple Echoes</h3>
+                <h5>Kael Fischer</h5>
+                <p>Best of 2024</p>
+              </div>
+              <div class="customer-progress">
+                <div class="timer">
+                  <p class="duration">02:45</p>
+                  <input type="range" name="range" id="range" class="range" />
+                  <audio src="./music/holo.mp3" id="song"></audio>
+                  <p class="remaining">01:02</p>
+                </div>
+                <!-- <div class="customer-active"></div>
+                  <audio src="./music/holo.mp3" id="song"></audio>
+                </div>
+                <div class="customer-deactive"></div> -->
+              </div>
+            </div>
+          </div>
+          <div class="customer-action">
+            <div class="button">
+              <div class="play-repeat"><i class="fa-solid fa-repeat"></i></div>
+              <i class="fa-solid fa-backward-step play-backward"></i>
+              <div class="play-btn">
+                <i class="fa-solid fa-play"></i>
+              </div>
+              <i class="fa-solid fa-forward-step play-forward"></i>
+              <i class="fa-solid fa-shuffle play-infinity"></i>
+            </div>
+            <div class="lyrics">
+              <i class="fa-solid fa-chevron-up"></i>
+              <h5>LYRICS</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+  <script
+    src="https://kit.fontawesome.com/b490c4dfd9.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/js/main.js"></script>
+</html>

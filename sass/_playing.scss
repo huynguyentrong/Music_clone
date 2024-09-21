@@ -1,0 +1,39 @@
+.playing {
+  &-top {
+    background-color: #32323d;
+    border-radius: 6px 6px 0 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $color;
+    font-size: 13px;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &-bottom {
+    background-color: $background-light;
+    border-radius: 0 0 6px 6px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: $color-light;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .playing {
+    width: 130px;
+  }
+  .playing-bottom p {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .playing {
+    display: none;
+  }
+}

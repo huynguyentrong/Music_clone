@@ -1,0 +1,88 @@
+.sidebar {
+  height: 100vh;
+  background-color: $background-dark;
+  padding: 20px 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    button {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background-color: $background-light;
+      border: 1px solid #464748;
+      font-size: 20px;
+      padding: 4px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    img {
+      width: 100%;
+      max-width: 60px;
+      object-fit: cover;
+      object-position: top;
+      border-radius: 8px;
+    }
+    a {
+      color: $color;
+      font-size: 16px;
+    }
+  }
+  &-list {
+    list-style: none;
+  }
+  &-item {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    &:hover {
+      i {
+        color: $text-color;
+      }
+      a {
+        color: $text-color;
+      }
+    }
+    i {
+      width: 16px;
+    }
+    a {
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.2 ease;
+    }
+  }
+  &-menu {
+    h5 {
+      color: $color-light;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+
+    a {
+      color: $color;
+      width: 6em;
+    }
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sidebar-logo button {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .sidebar {
+    position: absolute;
+    left: -100%;
+  }
+  .sidebar-logo button {
+    display: flex;
+  }
+}

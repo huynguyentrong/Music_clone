@@ -1,0 +1,96 @@
+.trending {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  justify-content: space-between;
+  color: $color;
+  padding: 20px;
+  h5 {
+    display: inline;
+    margin-left: 12px;
+    color: $color-light;
+  }
+  img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+  }
+  &-info {
+    margin-top: 12px;
+    padding: 26px;
+    h2 {
+      font-size: 56px;
+      margin-bottom: 8px;
+    }
+    h4 {
+      display: inline;
+    }
+  }
+  &-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    button {
+      background-color: $text-color;
+      border: none;
+      color: $color;
+      padding: 10px 20px;
+      border-radius: 14px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    i {
+      color: $text-color;
+      font-size: 20px;
+      border: 2px solid #fff;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+@media screen and (max-width: 1400px) {
+  .trending-info h2 {
+    font-size: 36px;
+  }
+  .trending img {
+    width: 200px;
+    height: 180px;
+    border-radius: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .trending-info h2 {
+    font-size: 24px;
+  }
+  .trending-info h5 {
+    display: block;
+    font-size: 12px;
+    margin-left: 0;
+  }
+  .trending img {
+    width: 100%;
+    max-width: 200px;
+    height: 180px;
+    border-radius: 16px;
+  }
+  .trending-button button {
+    padding: 10px 12px;
+    font-size: 12px;
+  }
+  .trending-button i {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .trending img {
+    width: 120px;
+    height: 100px;
+    margin-top: 66px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .trending {
+    display: none;
+  }
+}
